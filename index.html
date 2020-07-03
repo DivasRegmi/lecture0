@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .a {
+        height: 350px;
+        width: 350px;
+        background-color: red;
+        margin: 50px auto;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        animation: move 10s infinite linear;
+      }
+
+      .b {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(19, 18, 18);
+        animation: move 3s 3 linear forwards ;
+      }
+      .c {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(19, 211, 121);
+        animation: move 3s 3 linear forwards ;
+      }
+
+      @keyframes move {
+        0% {
+          transform: rotate(0) scale(0);
+      
+        }
+
+        100% {
+          transform:  rotateY(360deg) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <div class="b"></div>
+      <div class="c"></div>
+    </div>
+  </body>
+</html>
